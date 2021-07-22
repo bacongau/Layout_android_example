@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_rcv2_217"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/custom_goods_rcv2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/keo" />
+
+    <TextView
+        android:id="@+id/textView_ten_rcv2_217"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Bim bim"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView_rcv2_217"
+        app:layout_constraintTop_toTopOf="@+id/imageView_rcv2_217" />
+
+    <TextView
+        android:id="@+id/textView_discount_rcv2_217"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="10%"
+        android:textColor="#F81B1B"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_rcv2_217"
+        app:layout_constraintStart_toStartOf="@+id/textView_ten_rcv2_217" />
+
+    <TextView
+        android:id="@+id/textView_before_rcv2_217"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="15.000 VND"
+        app:layout_constraintBottom_toTopOf="@+id/textView_after_rcv2_217"
+        app:layout_constraintStart_toEndOf="@+id/textView_discount_rcv2_217"
+        app:layout_constraintTop_toTopOf="@+id/textView_discount_rcv2_217" />
+
+    <TextView
+        android:id="@+id/textView_after_rcv2_217"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="13.500 VND"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_discount_rcv2_217"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_discount_rcv2_217"
+        app:layout_constraintTop_toBottomOf="@+id/textView_before_rcv2_217" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_before_rcv2_217"
+        app:layout_constraintEnd_toEndOf="@+id/textView_before_rcv2_217"
+        app:layout_constraintStart_toStartOf="@+id/textView_before_rcv2_217"
+        app:layout_constraintTop_toTopOf="@+id/textView_before_rcv2_217" />
+
+    <TextView
+        android:id="@+id/textView_status_rcv2_217"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hết hàng"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_rcv2_217"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_rcv2_217"
+        app:layout_constraintStart_toStartOf="@+id/imageView_rcv2_217"
+        app:layout_constraintTop_toTopOf="@+id/imageView_rcv2_217" />
+</androidx.constraintlayout.widget.ConstraintLayout>
